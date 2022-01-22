@@ -1,8 +1,9 @@
-package com.shiraj.data
+package com.shiraj.data.repository
 
 import com.shiraj.data.local.QuestionDao
 import com.shiraj.data.model.Question
-import com.shiraj.domain.GoodWallRepository
+import com.shiraj.data.remote.GoodWallRemoteDataSource
+import com.shiraj.domain.repository.GoodWallRepository
 import com.shiraj.domain.model.Output
 import com.shiraj.domain.model.QuestionEntity
 import kotlinx.coroutines.Dispatchers

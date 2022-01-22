@@ -1,6 +1,6 @@
 package com.shiraj.data.di
 
-import com.shiraj.data.Config
+import com.shiraj.data.utils.Config
 import com.shiraj.data.services.ApiService
 import dagger.Module
 import dagger.Provides

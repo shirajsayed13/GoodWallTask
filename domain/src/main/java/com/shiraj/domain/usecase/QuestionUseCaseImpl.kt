@@ -1,6 +1,6 @@
 package com.shiraj.domain.usecase
 
-import com.shiraj.domain.GoodWallRepository
+import com.shiraj.domain.repository.GoodWallRepository
 import com.shiraj.domain.model.Output
 import com.shiraj.domain.model.QuestionEntity
 import kotlinx.coroutines.flow.Flow

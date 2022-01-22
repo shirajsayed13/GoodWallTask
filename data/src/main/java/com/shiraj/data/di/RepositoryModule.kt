@@ -1,7 +1,7 @@
 package com.shiraj.data.di
 
-import com.shiraj.data.GoodWallRepositoryImpl
-import com.shiraj.domain.GoodWallRepository
+import com.shiraj.data.repository.GoodWallRepositoryImpl
+import com.shiraj.domain.repository.GoodWallRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

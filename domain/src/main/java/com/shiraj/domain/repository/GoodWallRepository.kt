@@ -1,4 +1,4 @@
-package com.shiraj.domain
+package com.shiraj.domain.repository
 
 import com.shiraj.domain.model.Output
 import com.shiraj.domain.model.QuestionEntity

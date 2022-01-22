@@ -1,7 +1,5 @@
 package com.shiraj.domain.model
 
-import com.shiraj.domain.ApiError
-
 /**
  * Generic class for holding success response, error response and loading status
  */

@@ -1,6 +1,6 @@
 package com.shiraj.data
 
-import com.shiraj.domain.ApiError
+import com.shiraj.domain.model.ApiError
 import com.shiraj.domain.model.Output
 import retrofit2.Response
 import retrofit2.Retrofit
