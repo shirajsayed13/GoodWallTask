@@ -11,10 +11,10 @@ import androidx.navigation.fragment.findNavController
 import com.shiraj.domain.model.Output
 import com.shiraj.domain.model.QuestionEntity
 import com.shiraj.goodwalltask.R
-import com.shiraj.goodwalltask.utils.applyTheme
 import com.shiraj.goodwalltask.base.BaseFragment
 import com.shiraj.goodwalltask.databinding.FragmentQuestionsBinding
 import com.shiraj.goodwalltask.detail.AnswerFragment
+import com.shiraj.goodwalltask.utils.applyTheme
 
 class QuestionsFragment : BaseFragment() {
 
@@ -26,13 +26,13 @@ class QuestionsFragment : BaseFragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         return if (::binding.isInitialized) {
             binding.root
         } else {
             binding = FragmentQuestionsBinding.inflate(inflater, container, false)
             with(binding) {
-                headerTitle = "Questions"
+                headerTitle = getString(R.string.questions)
                 root
             }
         }

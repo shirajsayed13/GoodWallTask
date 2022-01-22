@@ -9,17 +9,9 @@
     <string name="no_of_questions">%d Questions</string>
     <string name="no_of_answers">%d Answers</string>
     <string name="go_back">Go back</string>
-    <string name="favourite">Favourite</string>
     <string name="send_to">Send to</string>
-    <string name="format_quote">\"%s\"</string>
-    <string name="all_questions">All Questions</string>
+    <string name="questions">Questions</string>
     <string name="label_android">Android</string>
     <string name="label_kotlin">Kotlin</string>
     <string name="label_java">Java</string>
-    <string name="label_favourites">Favourites</string>
-    <string name="added_to_fav">Added to favourites</string>
-    <string name="removed_from_fav">Removed from favourites</string>
-    <string name="empty_text" />
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

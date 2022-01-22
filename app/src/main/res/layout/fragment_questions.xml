@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
-            android:contentDescription="@string/favourite"
+            android:contentDescription="@string/questions"
             android:focusable="true"
             android:padding="@dimen/dimen_8dp"
             android:src="@drawable/ic_book"
