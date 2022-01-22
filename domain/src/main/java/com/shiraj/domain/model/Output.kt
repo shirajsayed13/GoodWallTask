@@ -1,11 +1,17 @@
-package com.shiraj.domain
+package com.shiraj.domain.model
 
+import com.shiraj.domain.ApiError
+
+/**
+ * Generic class for holding success response, error response and loading status
+ */
 data class Output<out T>(
     val status: Status,
     val data: T?,
     val error: ApiError?,
     val message: String?
 ) {
+
     enum class Status {
         SUCCESS,
         ERROR,
@@ -13,7 +19,7 @@ data class Output<out T>(
     }
 
     companion object {
-        fun <T> success(data: T): Output<T> {
+        fun <T> success(data: T?): Output<T> {
             return Output(Status.SUCCESS, data, null, null)
         }
 

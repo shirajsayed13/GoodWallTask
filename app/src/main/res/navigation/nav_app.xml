@@ -7,13 +7,21 @@
     <fragment
         android:id="@+id/splashFragment"
         android:name="com.shiraj.goodwalltask.splash.SplashFragment"
-        android:label="SplashFragment" >
+        android:label="SplashFragment">
         <action
-            android:id="@+id/action_splashFragment_to_questionsHostFragment"
-            app:destination="@id/questionsHostFragment" />
+            android:id="@+id/action_splashFragment_to_questionsFragment"
+            app:destination="@id/questionsFragment" />
     </fragment>
     <fragment
-        android:id="@+id/questionsHostFragment"
-        android:name="com.shiraj.goodwalltask.base.QuestionsHostFragment"
-        android:label="QuestionsHostFragment" />
+        android:id="@+id/questionsFragment"
+        android:name="com.shiraj.goodwalltask.questions.QuestionsFragment"
+        android:label="QuestionsFragment">
+        <action
+            android:id="@+id/action_questionsFragment_to_answerFragment"
+            app:destination="@id/answerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/answerFragment"
+        android:name="com.shiraj.goodwalltask.detail.AnswerFragment"
+        android:label="AnswerFragment" />
 </navigation>

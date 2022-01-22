@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.shiraj.domain.model.QuestionEntity" />
+
+        <variable
+            name="position"
+            type="Integer" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        style="@style/buiStyleCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_4dp"
+        app:cardBackgroundColor="@{position % 2 ==1 ? @color/colorCardBg2: @color/colorCardBg1, default=@color/colorCardBg2}">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view_qn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:transitionName="@{item.question}">
+
+            <TextView
+                android:id="@+id/tv_qn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_16dp"
+                android:text="@{item.question}"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@id/btn_fav"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="What is Application" />
+
+            <ImageView
+                android:id="@+id/btn_fav"
+                android:layout_width="@dimen/dimen_16dp"
+                android:layout_height="@dimen/dimen_16dp"
+                android:layout_margin="@dimen/dimen_16dp"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_qn"
+                app:layout_constraintTop_toTopOf="parent"
+                app:typeIcon="@{item.langCategory}" />
+
+            <TextView
+                android:id="@+id/tv_hashtags"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@{item.generateHashTags()}"
+                android:textAppearance="?attr/textAppearanceCaption"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tv_level"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_qn"
+                tools:text="#android" />
+
+            <TextView
+                android:id="@+id/tv_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:drawablePadding="@dimen/dimen_8dp"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textAppearance="?attr/textAppearanceCaption"
+                android:textColor="@color/colorTextHashTag"
+                app:drawableTint="@color/colorTextHashTag"
+                app:expLevel="@{item.level}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_hashtags"
+                tools:drawableRight="@drawable/ic_bike_white"
+                tools:text="MEDIUM" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,7 +1,7 @@
 package com.shiraj.data
 
 import com.shiraj.domain.ApiError
-import com.shiraj.domain.Output
+import com.shiraj.domain.model.Output
 import retrofit2.Response
 import retrofit2.Retrofit
 import java.io.IOException

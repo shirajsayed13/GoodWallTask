@@ -1,7 +1,8 @@
-package com.shiraj.domain
+package com.shiraj.domain.model
 
 import android.os.Parcelable
 import androidx.annotation.NonNull
+import kotlinx.parcelize.IgnoredOnParcel
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
@@ -12,8 +13,7 @@ data class QuestionEntity(
     val langCategory: Int,
     val hashtags: List<String>,
     val question: String,
-    val answer: String,
-    val isFavourite: Boolean = false
+    val answer: String
 ) : Parcelable {
     fun generateHashTags() = hashtags.joinToString(prefix = "#", separator = " #")
 }
