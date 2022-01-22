@@ -67,7 +67,7 @@ class SplashFragment : BaseFragment() {
 
     private fun navigateToQuestions() {
         val extras = FragmentNavigatorExtras(
-            binding.profPic to getString(R.string.app_name)
+            binding.ivPic to getString(R.string.app_name)
         )
         findNavController().navigate(
             R.id.action_splashFragment_to_questionsFragment,

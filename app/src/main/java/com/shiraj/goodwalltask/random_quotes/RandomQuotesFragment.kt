@@ -1,14 +1,13 @@
 package com.shiraj.goodwalltask.random_quotes
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.shiraj.goodwalltask.R
 import com.shiraj.goodwalltask.base.BaseFragment
 
+//TODO implement this feature using RxJava just for demo
 class RandomQuotesFragment : BaseFragment() {
 
     companion object {
@@ -23,11 +22,4 @@ class RandomQuotesFragment : BaseFragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_random_quotes, container, false)
     }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(RandomQuotesViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
-
 }
