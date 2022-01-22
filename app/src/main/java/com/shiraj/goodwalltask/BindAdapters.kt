@@ -13,15 +13,15 @@ fun setExperienceLevel(textView: TextView, level: Int) {
     val pairs = when (level) {
         Constants.LEVEL_MEDIUM -> Pair(
             textView.context.getString(R.string.title_medium),
-            AppCompatResources.getDrawable(textView.context, R.drawable.ic_car_white)
+            AppCompatResources.getDrawable(textView.context, R.drawable.ic_car)
         )
         Constants.LEVEL_EXPERT -> Pair(
             textView.context.getString(R.string.title_expert),
-            AppCompatResources.getDrawable(textView.context, R.drawable.ic_flight_white)
+            AppCompatResources.getDrawable(textView.context, R.drawable.ic_flight)
         )
         else -> Pair(
             textView.context.getString(R.string.title_beginner),
-            AppCompatResources.getDrawable(textView.context, R.drawable.ic_bike_white)
+            AppCompatResources.getDrawable(textView.context, R.drawable.ic_bike)
         )
     }
     textView.text = pairs.first

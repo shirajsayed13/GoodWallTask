@@ -15,7 +15,7 @@
         android:background="@color/myBackground">
 
         <ImageView
-            android:id="@+id/profPic"
+            android:id="@+id/iv_pic"
             android:layout_width="@dimen/dimen_100dp"
             android:layout_height="@dimen/dimen_100dp"
             android:transitionName="@string/app_name"

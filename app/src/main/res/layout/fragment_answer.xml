@@ -46,17 +46,19 @@
                 app:tint="@color/white" />
 
             <ImageView
-                android:id="@+id/btn_fav"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="?attr/selectableItemBackgroundBorderless"
+                android:id="@+id/iv_langCategory"
+                android:layout_width="@dimen/dimen_32dp"
+                android:layout_height="@dimen/dimen_32dp"
+                android:layout_margin="@dimen/dimen_16dp"
                 android:clickable="true"
-                android:contentDescription="@string/questions"
+                android:contentDescription="@string/app_name"
                 android:focusable="true"
+                android:scaleType="fitCenter"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:src="@drawable/ic_favorite_outline_white" />
+                app:typeIcon="@{item.langCategory}"
+                tools:src="@drawable/ic_kotlin" />
 
             <TextView
                 android:layout_width="0dp"
@@ -138,7 +140,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/tv_hashtags"
-                        tools:drawableRight="@drawable/ic_bike_white"
+                        tools:drawableRight="@drawable/ic_bike"
                         tools:text="MEDIUM" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -157,16 +159,5 @@
                     tools:text="The Application class in Android is the base class within an Android app that contains all other components such as activities and services. The Application class, or any subclass of the Application class, is instantiated before any other class when the process for your application/package is created." />
             </androidx.appcompat.widget.LinearLayoutCompat>
         </androidx.core.widget.NestedScrollView>
-
-        <ImageView
-            android:layout_width="@dimen/dimen_32dp"
-            android:layout_height="@dimen/dimen_32dp"
-            android:layout_margin="@dimen/dimen_16dp"
-            android:contentDescription="@string/app_name"
-            android:scaleType="fitCenter"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:typeIcon="@{item.langCategory}"
-            tools:src="@drawable/ic_kotlin" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

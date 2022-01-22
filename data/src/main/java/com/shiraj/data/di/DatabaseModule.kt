@@ -2,7 +2,7 @@ package com.shiraj.data.di
 
 import android.content.Context
 import androidx.room.Room
-import com.shiraj.data.utils.Config
+import com.shiraj.data.BuildConfig
 import com.shiraj.data.local.AppDatabase
 import com.shiraj.data.local.QuestionDao
 import dagger.Module
@@ -22,7 +22,7 @@ object DatabaseModule {
         return Room.databaseBuilder(
             appContext,
             AppDatabase::class.java,
-            Config.DB_NAME
+            BuildConfig.DB_NAME
         ).build()
     }
 

@@ -1,6 +1,6 @@
 package com.shiraj.data.di
 
-import com.shiraj.data.utils.Config
+import com.shiraj.data.BuildConfig
 import com.shiraj.data.services.ApiService
 import dagger.Module
 import dagger.Provides
@@ -36,7 +36,7 @@ object NetworkModule {
         okHttpClient: OkHttpClient
     ): Retrofit {
         return Retrofit.Builder()
-            .baseUrl(Config.BASE_URL)
+            .baseUrl(BuildConfig.API_BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .client(okHttpClient)
             .build()
