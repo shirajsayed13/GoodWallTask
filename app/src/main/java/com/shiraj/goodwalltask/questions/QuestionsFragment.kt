@@ -87,6 +87,10 @@ class QuestionsFragment : BaseFragment() {
         binding.btnBack.setOnClickListener {
             findNavController().popBackStack()
         }
+
+        binding.btnFav.setOnClickListener {
+            findNavController().navigate(R.id.action_questionsFragment_to_randomQuotesFragment)
+        }
     }
 
     private fun onTriggerQuestions() {

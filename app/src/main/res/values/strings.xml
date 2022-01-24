@@ -14,4 +14,7 @@
     <string name="label_android">Android</string>
     <string name="label_kotlin">Kotlin</string>
     <string name="label_java">Java</string>
+    <string name="error_while_fetching_image">Fetching images failed</string>
+    <string name="fetch_image">Fetch Image</string>
+    <string name="fetch_image_with_rx">Fetch image with Picasso and Rx just for demo</string>
 </resources>

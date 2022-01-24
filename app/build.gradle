@@ -20,6 +20,8 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
+
+        buildConfigField "String", "BASE_IMAGE_URL", '"https://picsum.photos"'
     }
 
     buildTypes {
@@ -84,6 +86,14 @@ dependencies {
     //Coroutines
     implementation kotlin.kotlinxCoroutines
 
+    //Reactive Extensions
+    implementation rx.rxAndroid
+    implementation rx.rxJava
+    implementation rx.rxKotlin
+
+    //Image Loading Picasso
+    implementation image.picasso
+
     // optional - Test helpers for LiveData
     testImplementation testing.unitTestingCore
 
@@ -92,6 +102,6 @@ dependencies {
     testImplementation testing.unitTestingMockitoCore
 
     testImplementation testing.unitTestingJunit
-    androidTestImplementation  testing.uiTestingJunit
-    androidTestImplementation  testing.uiTestingEspresso
+    androidTestImplementation testing.uiTestingJunit
+    androidTestImplementation testing.uiTestingEspresso
 }

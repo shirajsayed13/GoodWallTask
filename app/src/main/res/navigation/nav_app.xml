@@ -30,7 +30,7 @@
         android:label="AnswerFragment" />
     <fragment
         android:id="@+id/randomQuotesFragment"
-        android:name="com.shiraj.goodwalltask.random_quotes.RandomQuotesFragment"
+        android:name="com.shiraj.goodwalltask.image_with_rx.RandomImageWithRxFragment"
         android:label="fragment_random_quotes"
-        tools:layout="@layout/fragment_random_quotes" />
+        tools:layout="@layout/fragment_random_image_with_rx" />
 </navigation>
