@@ -12,7 +12,7 @@ Flows are built on top of coroutines and can provide multiple values. A flow is 
 
 Architecture
 Clean Architecture & 
-MVVM pattern (View - DataBinding - ViewModel - Model)
+MVVM pattern (View - ViewModel - Model)
 
 Android Architecture Components - Collection of libraries that help you design robust, testable, and maintainable apps.
 
