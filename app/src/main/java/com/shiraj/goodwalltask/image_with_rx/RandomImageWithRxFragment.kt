@@ -15,7 +15,7 @@ import com.shiraj.goodwalltask.image_with_rx.data.ResponseState
 class RandomImageWithRxFragment : BaseFragment() {
 
     private lateinit var binding: FragmentRandomImageWithRxBinding
-    private val imageViewModel: ImageViewModel by viewModels()
+    private val imageViewModel by viewModels<ImageViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater,

@@ -7,10 +7,13 @@ import com.shiraj.goodwalltask.image_with_rx.data.BitmapResult
 import com.shiraj.goodwalltask.image_with_rx.data.BitmapWithQuality
 import com.shiraj.goodwalltask.image_with_rx.fetcher.ImageFetcher
 import com.squareup.picasso.Picasso
+import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.rxkotlin.subscribeBy
+import javax.inject.Inject
 
-class ImageViewModel : ViewModel() {
+@HiltViewModel
+class ImageViewModel @Inject constructor() : ViewModel() {
 
     private val disposable = CompositeDisposable()
     private val fetcher = ImageFetcher(Picasso.get())
