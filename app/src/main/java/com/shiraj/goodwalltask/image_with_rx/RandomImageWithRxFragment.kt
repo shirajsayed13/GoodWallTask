@@ -61,8 +61,8 @@ class RandomImageWithRxFragment : BaseFragment() {
         binding.imageView.setImageBitmap(bitmap)
     }
 
-    override fun onPause() {
-        super.onPause()
+    override fun onDestroyView() {
+        super.onDestroyView()
         imageViewModel.unSubscribe()
     }
 }
