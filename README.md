@@ -1,5 +1,10 @@
 # GoodWallTask
 
+##ScreenShots
+
+![1] (/screenshots/GoodWallListingScreen.jpeg)
+![2] (/screenshots/GoodWallDetailScreen.jpeg)
+
 Project build using
 
 Kotlin - First class and official programming language for Android development.
