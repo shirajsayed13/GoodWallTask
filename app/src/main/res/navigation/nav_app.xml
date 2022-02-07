@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_app"
     app:startDestination="@id/splashFragment">
 
@@ -20,17 +19,9 @@
         <action
             android:id="@+id/action_questionsFragment_to_answerFragment"
             app:destination="@id/answerFragment" />
-        <action
-            android:id="@+id/action_questionsFragment_to_randomQuotesFragment"
-            app:destination="@id/randomQuotesFragment" />
     </fragment>
     <fragment
         android:id="@+id/answerFragment"
         android:name="com.shiraj.goodwalltask.detail.AnswerFragment"
         android:label="AnswerFragment" />
-    <fragment
-        android:id="@+id/randomQuotesFragment"
-        android:name="com.shiraj.goodwalltask.image_with_rx.RandomImageWithRxFragment"
-        android:label="fragment_random_quotes"
-        tools:layout="@layout/fragment_random_image_with_rx" />
 </navigation>

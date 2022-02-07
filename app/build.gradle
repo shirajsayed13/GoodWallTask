@@ -86,11 +86,6 @@ dependencies {
     //Coroutines
     implementation kotlin.kotlinxCoroutines
 
-    //Reactive Extensions
-    implementation rx.rxAndroid
-    implementation rx.rxJava
-    implementation rx.rxKotlin
-
     //Image Loading Picasso
     implementation image.picasso
 

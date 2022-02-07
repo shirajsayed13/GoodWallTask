@@ -38,6 +38,7 @@
             android:contentDescription="@string/questions"
             android:focusable="true"
             android:padding="@dimen/dimen_8dp"
+            android:visibility="gone"
             android:src="@drawable/ic_book"
             app:layout_constraintBottom_toTopOf="@id/swipeRefresh"
             app:layout_constraintEnd_toEndOf="parent"

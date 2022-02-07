@@ -22,9 +22,6 @@ ext {
     def hiltLifecycleViewModelVersion = "1.0.0-alpha03"
     def kaptHiltCompilerVersion = "1.0.0"
     def kotlinxCoroutinesVersion = "1.5.2"
-    def rxAndroidVersion = "2.1.1"
-    def rxJavaVersion = "2.2.21"
-    def rxKotlinVersion = "2.4.0"
     def imagePicassoVersion = "2.71828"
     def roomVersion = "2.4.0"
     def kaptRoomCompilerVersion = "2.4.0"
@@ -71,12 +68,6 @@ ext {
             kaptHiltAndroidCompiler: "com.google.dagger:hilt-android-compiler:$kaptHiltAndroidCompilerVersion",
             kaptHiltCompiler       : "androidx.hilt:hilt-compiler:$kaptHiltCompilerVersion",
             hiltViewModel          : "androidx.hilt:hilt-lifecycle-viewmodel:$hiltLifecycleViewModelVersion"
-    ]
-
-    rx = [
-            rxAndroid: "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion",
-            rxJava   : "io.reactivex.rxjava2:rxjava:$rxJavaVersion",
-            rxKotlin : "io.reactivex.rxjava2:rxkotlin:$rxKotlinVersion"
     ]
 
     image = [
